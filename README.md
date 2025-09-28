@@ -12,7 +12,7 @@ The parent process reads data from the source file and writes it into the pipe, 
 ---
 
 ## Compilation
-**gcc -o filecopy filecopy.c**
+**gcc filecopy.c -o filecopy**
 
 ---
 
