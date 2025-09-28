@@ -7,20 +7,20 @@ The parent process reads data from the source file and writes it into the pipe, 
 ## Requirements
 
 - A Unix-like environment (Linux, macOS, WSL, etc.)
-- A C compiler such as `gcc`
+- A C compiler such as **`gcc`**
 
 ---
 
 ## Compilation
-gcc -o filecopy filecopy.c
+**gcc -o filecopy filecopy.c**
 
 ---
 
 ## Usage
 
-- ./filecopy <source_file> <destination_file>
-- <source_file> → The file you want to copy.
-- <destination_file> → The new file where the contents will be written.
+- **./filecopy <source_file> <destination_file>**
+- **<source_file>** → The file you want to copy.
+- **<destination_file>** → The new file where the contents will be written.
 
 ---
 
@@ -34,6 +34,6 @@ gcc -o filecopy filecopy.c
 
 ## Notes
 
-- The program demonstrates inter-process communication using pipe() and fork().
+- The program demonstrates inter-process communication using **pipe()** and **fork()**.
 - The parent process closes the read end of the pipe; the child process closes the write end.
-- Buffer size is set to 25 bytes for simplicity (see BUFFER_SIZE in the code).
+- Buffer size is set to **25 bytes** for simplicity (see **BUFFER_SIZE** in the code).
