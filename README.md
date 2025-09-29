@@ -1,6 +1,7 @@
 # File Copy using Pipes
 This program copies the contents of one file to another using a **pipe** and **fork()**.  
 The parent process reads data from the source file and writes it into the pipe, while the child process reads from the pipe and writes into the destination file.
+In the process, they will use the buffer with size to read and write with the size of each character. They just copy 25 characters each time.
 
 ---
 
